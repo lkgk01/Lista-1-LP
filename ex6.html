@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex:6 lista 1 array</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inp">
+        <input type="number" id="inp1" />
+        <input type="number" id="inp2" />
+        <input type="number" id="inp3" />
+      </div>
+      <button onclick="exe()" class="bt">Executar</button>
+      <div class="result" id="result"></div>
+    </div>
+  </body>
+  <script>
+    var n = [];
+    function exe() {
+      var result = document.getElementById("result");
+      var inp1 = parseFloat(document.getElementById("inp1").value);
+      var inp2 = parseFloat(document.getElementById("inp2").value);
+      var inp3 = parseFloat(document.getElementById("inp3").value);
+      n.push(inp1, inp2, inp3);
+      var maior = Math.max(inp1, inp2, inp3);
+      var menor = Math.min(inp1, inp2, inp3);
+      var n1 = n.reduce((a, b) => a + b);
+      if (n1 >= 100) {
+        document.write(maior);
+      } else {
+        document.write(menor);
+      }
+    }
+  </script>
+
+</html>

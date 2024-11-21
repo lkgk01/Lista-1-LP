@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex:5 lista 1 array</title>
+  </head>
+  <body>
+    <input class="inp1" type="text" id="inp1" />
+    <input class="inp2" type="text" id="inp2" />
+    <input class="inp3" type="text" id="inp3" />
+    <button onclick="mais1()">Adicionar</button>
+    <div class="resultDiv" id="resultDiv"></div>
+  </body>
+  <script>
+    function mais1(){
+   let vetor = [
+    document.getElementById("inp1").value,
+    document.getElementById("inp2").value,
+    document.getElementById("inp3").value
+   ]
+
+   let vetorconc = vetor[0].concat(vetor[1], vetor[2])
+
+   let result = document.getElementById("resultDiv").textContent = vetorconc
+    }
+
+  </script>
+</html>

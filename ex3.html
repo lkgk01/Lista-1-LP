@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex:3 lista 1 array</title>
+</head>
+<body>
+    <h1>Informe cinco números:</h1>
+    <input id="numero1" type="number" placeholder="Número 1">
+    <input id="numero2" type="number" placeholder="Número 2">
+    <input id="numero3" type="number" placeholder="Número 3">
+    <input id="numero4" type="number" placeholder="Número 4">
+    <input id="numero5" type="number" placeholder="Número 5">
+    <button onclick="exibirOrdemDecrescente()">Exibir ordem decrescente</button>
+    
+
+    <script>
+     
+        function exibirOrdemDecrescente() {
+            const num1 = parseFloat(document.getElementById("numero1").value);
+            const num2 = parseFloat(document.getElementById("numero2").value);
+            const num3 = parseFloat(document.getElementById("numero3").value);
+            const num4 = parseFloat(document.getElementById("numero4").value);
+            const num5 = parseFloat(document.getElementById("numero5").value);
+
+            
+            const numeros = [num1, num2, num3, num4, num5];
+
+            
+            numeros.sort((a, b) => b - a);
+
+            
+            alert("Números em ordem decrescente: " + numeros.join(", "));
+        }
+    </script>
+
+</body>
+</html>

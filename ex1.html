@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex:1 lista 1 array</title>
+</head>
+<body>
+
+    <script>
+let val = []
+
+for ( let i = 0; i < 5; i ++) {
+ let num = parseInt(prompt("digite um valor " + (i +1)));
+ val.push(num)
+}
+ 
+let soma = 0;
+for (let i = 0; i < val.length; i++) {
+ soma += val[i]
+
+}
+document.write("a soma dos valores é:" +soma)
+
+
+
+
+    </script>
+
+</body>
+</html>
